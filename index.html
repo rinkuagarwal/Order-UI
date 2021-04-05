@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>OMS</title>
+    </head>
+    <link rel="stylesheet" href='index.css'>
+    <body>
+        <h1>Order Management</h1>
+        <hr></hr>
+        <button1 onclick="add()">Home</button1>
+        <form>
+            <label>Enter Item:</label>
+            <input placeholder="Item">
+            <br>
+            <br>
+            <label>Price:</label>
+            <select onclick="add()">
+                <option value="option1">Less than 5000</option>
+                <option value="option2">5000-10000</option>
+                <option value="option3">10000-30000</option>
+                <option value="option4">More than 30000</option>
+    
+            </select>
+            <br>
+            <br>
+            
+            <div onclick="add()">Tax: 
+                <input type="number">
+                
+            </div>
+            <br>
+            
+            <div onclick="add()">Type:
+                <input type="radio" name='type'> Domestic
+                <input type="radio" name='type'> International
+            </div>
+            
+        </form>
+        <button onclick="add()">Search</button>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Tax</th>
+                <th>Type</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>30000</td>
+                    <td>10%</td>
+                    <td>DOMESTIC</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>300</td>
+                    <td>20%</td>
+                    <td>INTERNATIONAL</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src='index.js'></script>
+    </body>
+</html>
